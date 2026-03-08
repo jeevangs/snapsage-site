@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSage - Snap it. Become a sage about it.</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f7;
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        nav {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #2c2c2e;
+        }
+        nav a {
+            color: #86868b;
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 14px;
+        }
+        nav a:hover { color: #f5f5f7; }
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+        .hero-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #34c759, #30d158);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            font-size: 56px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+        .hero .tagline {
+            font-size: 20px;
+            color: #86868b;
+            font-weight: 400;
+        }
+        .modes {
+            padding: 60px 0;
+        }
+        .modes h2 {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .mode-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .mode-card {
+            background: #1c1c1e;
+            border-radius: 16px;
+            padding: 28px;
+        }
+        .mode-card .mode-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .mode-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .mode-card p {
+            font-size: 15px;
+            color: #86868b;
+            line-height: 1.5;
+        }
+        .mode-nutrition h3 { color: #34c759; }
+        .mode-diy h3 { color: #ff9f0a; }
+        .mode-shopping h3 { color: #0a84ff; }
+        .mode-expert h3 { color: #bf5af2; }
+        .features {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            text-align: center;
+        }
+        .feature-item { padding: 20px; }
+        .feature-item .feat-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        .feature-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .feature-item p {
+            font-size: 14px;
+            color: #86868b;
+        }
+        .support {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid #2c2c2e;
+        }
+        .support h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .support p {
+            font-size: 17px;
+            color: #86868b;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .support-email {
+            display: inline-block;
+            background: #1c1c1e;
+            color: #0a84ff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .support-email:hover { background: #2c2c2e; }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #2c2c2e;
+            color: #48484a;
+            font-size: 13px;
+        }
+        footer a {
+            color: #48484a;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        footer a:hover { color: #86868b; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 36px; }
+            .mode-grid { grid-template-columns: 1fr; }
+            .feature-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#support">Support</a>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-icon">&#x1F4F7;</div>
+            <h1>SnapSage</h1>
+            <p class="tagline">Snap it. Become a sage about it.</p>
+        </section>
+
+        <section class="modes">
+            <h2>Four Powerful Modes</h2>
+            <div class="mode-grid">
+                <div class="mode-card mode-nutrition">
+                    <div class="mode-icon">&#x1F96C;</div>
+                    <h3>Nutrition</h3>
+                    <p>Snap your meal for instant calorie estimates, macro breakdowns, nutrient rings, and personalized dietary insights.</p>
+                </div>
+                <div class="mode-card mode-diy">
+                    <div class="mode-icon">&#x1F527;</div>
+                    <h3>DIY</h3>
+                    <p>Photo any repair job for step-by-step instructions, difficulty ratings, tool lists, and cost estimates.</p>
+                </div>
+                <div class="mode-card mode-shopping">
+                    <div class="mode-icon">&#x1F6D2;</div>
+                    <h3>Shopping</h3>
+                    <p>Snap any product for price comparisons, value scores, alternatives, and buying recommendations.</p>
+                </div>
+                <div class="mode-card mode-expert">
+                    <div class="mode-icon">&#x1F50D;</div>
+                    <h3>Expert</h3>
+                    <p>Point your camera at anything for layered, in-depth analysis from quick overview to deep expertise.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feat-icon">&#x1F4F8;</div>
+                    <h4>Multi-Angle Capture</h4>
+                    <p>Take up to 3 photos for more accurate analysis</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon">&#x1F4CA;</div>
+                    <h4>Layered Results</h4>
+                    <p>Swipe through depth cards from summary to deep detail</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon">&#x1F9E0;</div>
+                    <h4>Smart Context</h4>
+                    <p>AI adapts to your experience level and interests</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon">&#x1F512;</div>
+                    <h4>Privacy First</h4>
+                    <p>Your data stays on your device</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon">&#x267F;</div>
+                    <h4>Accessible</h4>
+                    <p>Full VoiceOver and Dynamic Type support</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feat-icon">&#x1F31C;</div>
+                    <h4>Dark Mode</h4>
+                    <p>Beautiful dark-first design</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="support" id="support">
+            <h2>Support</h2>
+            <p>Have a question, found a bug, or want to share feedback? We'd love to hear from you.</p>
+            <a href="mailto:snapsagesupport@gmail.com" class="support-email">snapsagesupport@gmail.com</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 SnapSage. All rights reserved.</p>
+            <p style="margin-top: 12px;">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#support">Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
